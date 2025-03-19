@@ -4,7 +4,7 @@ print("This is a console output")
 var1= input("Type a line of text and press enter:")
 print("You typed:" + var1)
 #I forgot to put in quotes here initially.
-
+print(__file__)
 infile = open("delta.txt")
 line1 = infline.readline()
 print(line1)
