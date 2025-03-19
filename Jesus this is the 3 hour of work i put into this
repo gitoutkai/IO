@@ -1,0 +1,12 @@
+print("This is a console output")
+#I am trying to do this all on myh own so who knows
+#this should jhust print the text this is console output
+var1= input("Type a line of text and press enter:")
+print("You typed:" + var1)
+#I forgot to put in quotes here initially.
+
+infile = open("delta.txt")
+line1 = infline.readline()
+print(line1)
+
+infile.close()
