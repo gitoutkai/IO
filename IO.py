@@ -21,7 +21,7 @@ if var1 >= var2:
 	#og print out said "Ferarri cant  win by more than (Print(var3)) points?"
 	# hey rob some sources are ssaying that I should not have brackets around the variables after the if statement  is that true?
 
-if var1 > var2 and var 1 == var2:
+if var1 > var2 and var1 == var2:
 	print ("This is never true!")
 #because the number needs to be greater than the other or equal to each other because logic
 else:
