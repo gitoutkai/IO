@@ -43,15 +43,17 @@ try:
 		print("this is not a number")
 
 #i had to remove the bit that was your first try from the lecture. now it has the second bit you told us to type with the elif and the except
+#this try function let me set up a multi-if then statement up so that I could have a program that could adapt to different user inputs\
 
 
 except:
 	print("that is not a number")
 
-
+#this is the final print option if the user doesnt enter a number when prompted
 #i agree the except thing is super cool and I should have asked about it because I wasted a lot of time #without it
 
-print(var4)
+print("You entered", var4)
+#This final printout is restating what the user inputed
 
 
 
