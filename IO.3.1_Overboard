@@ -1,0 +1,41 @@
+#IO.py shows how to define the python variables and also save those varibales and then push them onto a text file in two different ways
+#in the append style it will add to a file. in the write style it will overwrite the file with the new information
+
+#these are some variables that will be important later
+
+
+
+userlocation=input("How many miles away are you?")
+#at d one point I wanted to find a way to go from userdestinatilson to gps coordinates, and make this thing run off the haverstine formula
+print("You typed:" + userlocation + " miles away")
+
+#open a file from the local directory
+infile = open("delta.txt")
+
+#open by default so if you want to add text you need to specify writing, reading, appending etc
+line1= infile.readline()
+print(line1)
+#then use the close command to close the file
+infile.close()
+
+#reopen the file and then...
+#"w" is replacing  existing text
+#close the file
+outfile= open("delta.txt","w")
+outfile.write("You could consider relocation. Living " + userlocation + " miles away could make it hard to spend time to be with everyone.")
+
+outfile.close()
+
+#This is my second variable
+userETA=input("How long would it take you to get there in minutes?")
+outfile= open("delta.txt", "a")
+outfile.write("Last time we talked you told me it would take " + userETA + "minutes to get there.")
+outfile.close()
+
+outfile= open("delta.txt","w")
+outfile.write("  ")
+outfile.close()
+
+infile = open("delta.txt", "a")
+infile.write("Last time we talked you said you were " + userlocation + " miles away. ETA was " + userETA+ ".")
+infile.close()
